@@ -5,7 +5,7 @@ on:
     types: [created]
 
 env:
-  PROJECT_NAME: ProjectName
+  PROJECT_NAME: OldSwedishDictionary
 
 jobs:
   deploy:
