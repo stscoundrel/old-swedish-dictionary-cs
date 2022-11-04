@@ -1,13 +1,20 @@
 ﻿using System.Collections.Generic;
 
+using System.Text.Json.Serialization;
+
 namespace OldSwedishDictionary;
 
 public readonly struct DictionaryEntry
 {
+    [JsonPropertyName("a")]
     public string Headword { get; init; }
+    [JsonPropertyName("b")]
     public string PartOfSpeech { get; init; }
+    [JsonPropertyName("c")]
     public string GrammaticalAspect { get; init; }
+    [JsonPropertyName("d")]
     public List<string> Definitions { get; init; }
+    [JsonPropertyName("e")]
     public List<string> AlternativeForms { get; init; }
 
     public override string ToString() => $"{Headword} - {Definitions[0]}";
