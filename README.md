@@ -10,6 +10,28 @@ Based on K.F. Söderwall's Medieval Swedish Dictionary
 dotnet add package OldSwedishDictionary
 ```
 
+### Usage
+
+
+```csharp
+using OldSwedishDictionary;
+
+// Get all dictionary entries.
+var dictionary = new Dictionary();
+var result = dictionary.GetEntries();
+Console.WriteLine(dictionar.Count); // 41 744 entries.
+
+// Individual entry contains headword, part of speech, grammatical aspect, definitions and possibly alternative forms.
+DictionaryEntry entry = result[100];
+Console.WriteLine(entry.Headword); // af bränna
+Console.WriteLine(entry.PartOfSpeech); // vb
+Console.WriteLine(entry.GrammaticalAspect); // v
+Console.WriteLine(entry.Definition); // afbränna, genom eld förstöra. hans trähws the af brendhe [...] etc.
+
+// ToString is overwritten for generic presentation.
+Console.WriteLine(entry.ToString()); // [HEADWORD] - [FIRST DEFINITION]
+
+```
 
 ### About "Dictionary of Old Swedish"
 
