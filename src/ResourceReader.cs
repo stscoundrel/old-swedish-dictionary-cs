@@ -4,7 +4,7 @@ using System.Reflection;
 
 public class ResourceReader
 {
-    
+
     private const string DictionaryPath = "OldSwedishDictionary.resources.old-swedish-dictionary.json";
 
     public static string ReadEntries()
@@ -16,6 +16,6 @@ public class ResourceReader
         {
             return reader.ReadToEnd();
         }
-        
-    }  
+
+    }
 }
