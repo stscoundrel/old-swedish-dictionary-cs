@@ -26,6 +26,7 @@ DictionaryEntry entry = result[100];
 Console.WriteLine(entry.Headword); // af bränna
 Console.WriteLine(entry.PartOfSpeech); // vb
 Console.WriteLine(entry.GrammaticalAspect); // v
+Console.WriteLine(entry.Information); // empty string in this case, some entries contain additional information.
 Console.WriteLine(entry.Definition); // afbränna, genom eld förstöra. hans trähws the af brendhe [...] etc.
 
 // ToString is overwritten for generic presentation.
