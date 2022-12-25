@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>stscoundrel / Sampo Silvennoinen</Authors>
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <Description>
       Old Swedish Dictionary for C# / .NET. From K.F. Söderwall's Medieval Swedish Dictionary
     </Description>
